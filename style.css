@@ -7,6 +7,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color: brown;
+}
+
 header li {
 	display: inline;
 	font-size: 24px;
@@ -39,16 +43,24 @@ h2 {
 	text-align: left;
 }
 
-.specifications {
-	font-style: italic;
-	list-style-image: url(arrow.png);
-}
-
 input {
 	width: 250px;
 	height: 25px;
 	color: darkblue;
 	font-size: 18px;
+}
+
+input:valid[type=email] {
+	color: darkgreen;
+}
+
+input:invalid {
+	color: black;
+	background-color: red;
+}
+
+input:not([type=email]) {
+	text-transform: capitalize;
 }
 
 textarea {
@@ -58,8 +70,13 @@ textarea {
 	font-size: 18px;
 }
 
-img {
+a img {
 	border: 1px solid black;
+}
+
+a img:hover {
+	border: 0;
+	padding: 1px;
 }
 
 footer {

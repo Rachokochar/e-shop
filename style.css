@@ -1,0 +1,67 @@
+body {
+	background: ghostwhite;
+}
+
+a {
+	color: darkslateblue;
+	text-decoration: none;
+}
+
+header li {
+	display: inline;
+	font-size: 24px;
+	padding: 10px;
+}
+
+.miniimage {
+	width: 150px;
+	height: 175px;
+}
+
+h2 {
+	color: black;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.brief {
+	color: #070707;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+}
+
+.details {
+	color: #484343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+
+.specifications {
+	font-style: italic;
+	list-style-image: url(arrow.png);
+}
+
+input {
+	width: 250px;
+	height: 25px;
+	color: darkblue;
+	font-size: 18px;
+}
+
+textarea {
+	width: 250px;
+	height: 150px;
+	color: darkblue;
+	font-size: 18px;
+}
+
+img {
+	border: 1px solid black;
+}
+
+footer {
+	text-align: right;
+}

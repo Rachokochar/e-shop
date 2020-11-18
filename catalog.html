@@ -3,42 +3,60 @@
 <head>
 	<meta charset=UTF-8>
 	<title>Каталог</title>
-	<link href=style.css rel=stylesheet>
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+		  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" rel="stylesheet">
+	<script crossorigin="anonymous"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script crossorigin="anonymous"
+			integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body class="container-fluid text-center" style="background: ghostwhite">
 <header>
-	<img alt=Логотип src=logo.png>
-	<ul>
-		<li><a href=index.html>Главная</a></li>
-		<li><a href=catalog.html>Каталог</a></li>
-		<li><a href=contacts.html>Контакты</a></li>
-	</ul>
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<a class="navbar-brand" href="index.html">
+			<img alt="" class="mw-100" src="logo.png">
+		</a>
+		<button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+				class="navbar-toggler" data-target="#navbarNavDropdown" data-toggle="collapse" type="button">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav" style="font-size: 24px">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Главная</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="catalog.html">Каталог</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contacts.html">Контакты</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 	<hr/>
 </header>
 <h1>Каталог</h1>
-<ul style='list-style: none'>
-	<li>
-		<a href=item1.html>
-			<img alt='Картинка товара' class=miniimage src=bip.webp>
-			<p>Amazfit Bip</p>
-		</a>
-	</li>
-	<li>
-		<a href=item2.html>
-			<img alt='Картинка товара' class=miniimage src=lite.webp>
-			<p>Amazfit Bip Lite</p>
-		</a>
-	</li>
-	<li>
-		<a href=item3.html>
-			<img alt='Картинка товара' class=miniimage src=s.webp>
-			<p>Amazfit Bip S</p>
-		</a>
-	</li>
-</ul>
+<div class="row" style="font-size: 24px">
+	<a class="col-xl-4 text-dark" href=item1.html>
+		<img alt='Картинка товара' height="500" src=bip.webp width="500">
+		<p>Amazfit Bip</p>
+	</a>
+	<a class="col-xl-4 text-dark" href=item2.html>
+		<img alt='Картинка товара' height="500" src=lite.webp width="500">
+		<p>Amazfit Bip Lite</p>
+	</a>
+	<a class="col-xl-4 text-dark" href=item3.html>
+		<img alt='Картинка товара' height="500" src=s.webp width="500">
+		<p>Amazfit Bip S</p>
+	</a>
+</div>
 <footer>
 	<hr/>
-	<p>© Все права защищены</p>
+	<p class="text-right">© Все права защищены</p>
 </footer>
 </body>
 </html>
